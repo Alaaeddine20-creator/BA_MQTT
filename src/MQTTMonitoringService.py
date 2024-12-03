@@ -20,7 +20,7 @@ class MQTTMonitoringService:
             broker (str): The MQTT broker to connect to (default is "test.mosquitto.org").
             port (int): The port of the MQTT broker (default is 1883).
             topic (str): The topic to subscribe to (default is "building/office/sensors").
-            log_file (str): The path to the log file where messages will be saved (default is "subscriber_logs.txt").
+            log_file (str): The path to the log file where messages will be saved (default is "../out/subscriber_logs.txt").
         """
         self.broker = broker
         self.port = port
