@@ -26,8 +26,7 @@ class MQTTMonitoringService:
         self.port = port
         self.topic = topic
         self.log_file = log_file
-        # Specify the MQTT protocol version to avoid the unsupported callback API error
-        self.client = mqtt.Client("MonitoringService", protocol=mqtt.MQTTv311)
+        self.client = mqtt.Client("MonitoringService")
 
     def connect(self):
         """

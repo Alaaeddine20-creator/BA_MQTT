@@ -28,8 +28,7 @@ class MQTTSensorPublisher:
         self.port = port
         self.topic = topic
         self.log_file = log_file
-        # Specify the MQTT version explicitly to avoid the unsupported callback API error
-        self.client = mqtt.Client("SensorPublisher", protocol=mqtt.MQTTv311)
+        self.client = mqtt.Client("SensorPublisher")
 
     def connect(self):
         """
